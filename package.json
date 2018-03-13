@@ -1,0 +1,25 @@
+{
+  "name": "cybertron.webpage",
+  "version": "1.0.0",
+  "description": "This is the Web Page for Cybertron Works in a Single Page Template, to be backed by Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/webserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "not yet decided"
+  },
+  "keywords": [
+    "cybertron"
+  ],
+  "author": "Cybertron Works",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.4",
+    "path": "^0.12.7"
+  }
+}
