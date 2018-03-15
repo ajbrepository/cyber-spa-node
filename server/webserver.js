@@ -1,6 +1,7 @@
 //Node Back End to render the HTMLs
 var express = require('express');
 var path = require('path');
+const favicon = require('express-favicon');
 const port = process.env.PORT || 8080;
 const app = express();
 const MongoClient = require('mongodb').MongoClient
@@ -11,7 +12,7 @@ MongoClient.connect(MONGOURL, (err, database) => {
     if (err) return console.log(err)
     db = database.db()
 
-    
+    app.use(favicon(__dirname + '/public/images/favicon.ico'));
     // set the view engine to ejs
     app.set('view engine', 'ejs');
     // default options
